@@ -6,7 +6,7 @@
     <title>Grok Bots Leadership Playbook · TriStar PT</title>
     <meta
       name="description"
-      content="How TriStar leadership should use Grok Bots: one decision surface, draft-only lanes, and a clear morning cadence."
+      content="How TriStar leadership should use Grok Bots — with worked scenarios, copy-ready prompts, and a clear morning cadence."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#model">Skip to content</a>
+    <a class="skip-link" href="#examples">Skip to examples</a>
 
     <header class="site-header">
       <div class="site-header__inner">
@@ -26,7 +26,8 @@
           <span>Grok Bots</span>
         </a>
         <nav class="nav-links" aria-label="Primary">
-          <a href="#model">Model</a>
+          <a href="#examples">Examples</a>
+          <a href="#prompts">Prompts</a>
           <a href="#morning">Morning</a>
           <a href="#roles">By role</a>
           <a href="#catalog">Catalog</a>
@@ -35,7 +36,8 @@
         <details class="nav-menu">
           <summary>Menu</summary>
           <div class="nav-menu__links">
-            <a href="#model">Model</a>
+            <a href="#examples">Examples</a>
+            <a href="#prompts">Prompts</a>
             <a href="#morning">Morning</a>
             <a href="#roles">By role</a>
             <a href="#catalog">Catalog</a>
@@ -60,11 +62,11 @@
           <p class="hero__eyebrow">TriStar PT leadership playbook</p>
           <h1>Grok Bots</h1>
           <p class="hero__lede">
-            Use the fleet to draft, flag, and brief. Keep humans on cash, risk, and the yes.
+            Real scenarios, copy-ready asks, and the exact decision language that keeps the fleet useful.
           </p>
           <div class="cta-row">
-            <a class="button button--primary" href="#morning">See the morning cadence</a>
-            <a class="button button--ghost" href="#roles">Find your starting bots</a>
+            <a class="button button--primary" href="#examples">See worked examples</a>
+            <a class="button button--ghost" href="#prompts">Copy a better prompt</a>
           </div>
         </div>
       </section>
@@ -74,9 +76,8 @@
           <div class="section__intro">
             <h2>The operating model</h2>
             <p>
-              Grok Bots are specialized agents for TriStar work. Chat memory dies with the thread.
-              Durable decisions live in the knowledge log. Leaders should treat bots as a drafting
-              staff with hard lane boundaries.
+              Grok Bots draft, flag, and brief. Leaders approve, send, publish, and decide. Chat memory
+              dies with the thread — durable decisions live in the knowledge log.
             </p>
           </div>
           <div class="rule">
@@ -111,6 +112,43 @@
               </div>
             </article>
           </div>
+          <div class="example-strip" aria-label="Quick example">
+            <div>
+              <strong>Quick example</strong>
+              <p>
+                Bot drafts a $1.4k Humana appeal. You say:
+                <em>“Green-light coding review then appeal. Do not email the payer yet.”</em>
+                That one sentence is the whole operating model.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="examples">
+        <div class="wrap">
+          <div class="section__intro">
+            <h2>Worked examples</h2>
+            <p>
+              Six real TriStar situations. Click a scenario, copy the ask, and notice the decide language
+              in the final reply.
+            </p>
+          </div>
+          <div class="scenario-switch" id="scenario-switch" role="tablist" aria-label="Scenarios"></div>
+          <div class="scenario-panel" id="scenario-panel"></div>
+        </div>
+      </section>
+
+      <section class="section" id="prompts">
+        <div class="wrap">
+          <div class="section__intro">
+            <h2>Say this, not that</h2>
+            <p>
+              Vague asks create busy bots. Specific asks create usable drafts. Tap copy on any good
+              prompt.
+            </p>
+          </div>
+          <div class="prompt-grid" id="prompt-grid"></div>
         </div>
       </section>
 
@@ -119,11 +157,17 @@
           <div class="section__intro">
             <h2>Weekday morning cadence</h2>
             <p>
-              One scan path. Owner Brief is the decision list. Everything else is depth on demand.
+              One scan path. Owner Brief is the decision list. Each step includes a sample exchange.
               Times are America/New_York.
             </p>
           </div>
           <div class="cadence" id="cadence"></div>
+
+          <div class="section__intro" style="margin-top: 3rem">
+            <h2>Weekly rhythm</h2>
+            <p>Use this as the leadership calendar, then dive into specialists only when needed.</p>
+          </div>
+          <div class="week-grid" id="week-grid"></div>
         </div>
       </section>
 
@@ -144,18 +188,17 @@
       <section class="section" id="ask">
         <div class="wrap">
           <div class="section__intro">
-            <h2>How to ask and approve</h2>
-            <p>Clear language keeps the fleet quiet and useful.</p>
+            <h2>Approval language that sticks</h2>
+            <p>Bots listen for verbs. Use them on purpose.</p>
           </div>
-          <div class="rule">
+          <div class="verb-grid">
             <article class="panel">
-              <h3>Good asks</h3>
+              <h3>Green verbs</h3>
               <ul class="checklist">
-                <li>“Green-light the appeal draft. Hold the write-off.”</li>
-                <li>“Paid invoice #13659 — stop re-flagging.”</li>
-                <li>“Route this to Denial Management. Status only in CoS.”</li>
-                <li>“Draft the posts. Do not publish.”</li>
-                <li>“What changed since 8:30 that needs a yes?”</li>
+                <li><strong>Green-light</strong> — proceed on the draft path named</li>
+                <li><strong>Send / publish</strong> — human authorizes the external action</li>
+                <li><strong>Paid / hold / skip</strong> — stops sticky re-asks</li>
+                <li><strong>Route to X</strong> — CoS or specialist owns next step</li>
               </ul>
             </article>
             <article class="panel">
@@ -177,7 +220,7 @@
           <div class="section__intro">
             <h2>Bot catalog</h2>
             <p>
-              Search the live TriStar fleet. Audience tags show who usually opens the thread.
+              Search the live TriStar fleet. Each card has a copy-ready ask.
               <span id="bot-count"></span>
             </p>
           </div>
@@ -200,7 +243,7 @@
 
           <div class="section__intro" style="margin-top: 3rem">
             <h2>Anti-patterns</h2>
-            <p>Most bot frustration comes from these six habits.</p>
+            <p>Most bot frustration comes from these six habits — with a wrong vs right example.</p>
           </div>
           <div class="anti-grid" id="antipatterns"></div>
 
@@ -220,6 +263,8 @@
         <div>Draft / flag / brief · Humans approve</div>
       </div>
     </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden>Copied</div>
 
     <style>
       .visually-hidden {

@@ -416,28 +416,6 @@ input {
   font-size: 0.97rem;
 }
 
-.role-switch {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin-bottom: 1.25rem;
-}
-
-.role-switch button {
-  border: 1px solid var(--line);
-  background: var(--panel);
-  color: var(--ink-soft);
-  border-radius: 999px;
-  padding: 0.65rem 1rem;
-  cursor: pointer;
-}
-
-.role-switch button[aria-pressed="true"] {
-  background: var(--forest);
-  border-color: var(--forest);
-  color: white;
-}
-
 .role-card {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -669,6 +647,341 @@ input {
   font-size: 0.92rem;
 }
 
+.example-strip {
+  margin-top: 1.15rem;
+  padding: 1.1rem 1.25rem;
+  border-radius: var(--radius);
+  background: var(--calm);
+  border: 1px solid rgba(47, 122, 91, 0.18);
+}
+
+.example-strip strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.example-strip p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.example-strip em {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--forest);
+}
+
+.scenario-switch,
+.role-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 1.25rem;
+}
+
+.scenario-switch button,
+.role-switch button {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink-soft);
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+}
+
+.scenario-switch button[aria-pressed="true"],
+.role-switch button[aria-pressed="true"] {
+  background: var(--forest);
+  border-color: var(--forest);
+  color: white;
+}
+
+.scenario-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 1.15rem;
+}
+
+.scenario-panel__head {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.scenario-panel__tag {
+  width: fit-content;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--leaf);
+}
+
+.scenario-panel h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.03em;
+}
+
+.scenario-panel__situation {
+  margin: 0;
+  color: var(--muted);
+}
+
+.scenario-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+.thread {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.bubble {
+  border-radius: 16px;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.bubble--you {
+  background: rgba(21, 71, 52, 0.06);
+  border-color: rgba(21, 71, 52, 0.18);
+}
+
+.bubble__who {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--leaf);
+}
+
+.bubble p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.scenario-why {
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  background: var(--forest-deep);
+  color: white;
+}
+
+.scenario-why strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-family: var(--font-display);
+}
+
+.scenario-why p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.prompt-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.prompt-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.prompt-side {
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+}
+
+.prompt-side--bad {
+  background: #f7ece8;
+  border: 1px solid #e5c4b5;
+}
+
+.prompt-side--good {
+  background: var(--calm);
+  border: 1px solid rgba(47, 122, 91, 0.22);
+}
+
+.prompt-side__label {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.prompt-side--bad .prompt-side__label {
+  color: #9a4a0f;
+}
+
+.prompt-side--good .prompt-side__label {
+  color: var(--forest);
+}
+
+.prompt-side p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.prompt-tip {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.copy-btn {
+  appearance: none;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.copy-btn:hover,
+.copy-btn:focus-visible {
+  background: rgba(255, 255, 255, 0.35);
+  outline: none;
+}
+
+.bubble .copy-btn {
+  color: var(--forest);
+  border-color: rgba(21, 71, 52, 0.28);
+}
+
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.week-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.week-card h3 {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+}
+
+.week-card ul {
+  margin: 0;
+  padding-left: 1.05rem;
+  color: var(--muted);
+}
+
+.week-card li + li {
+  margin-top: 0.35rem;
+}
+
+.verb-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.cadence-item__example {
+  margin-top: 0.55rem;
+  padding-top: 0.55rem;
+  border-top: 1px dashed var(--line);
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.anti-card__example {
+  margin-top: 0.65rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.bot-card__actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--line);
+}
+
+.bot-card__actions .copy-btn {
+  color: var(--forest);
+  border-color: rgba(21, 71, 52, 0.28);
+  flex-shrink: 0;
+}
+
+.toast {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 60;
+  background: var(--ink);
+  color: white;
+  padding: 0.7rem 0.95rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+
+.toast[hidden] {
+  display: none;
+}
+
+.ask {
+  position: relative;
+}
+
+.ask .copy-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  color: var(--forest);
+  border-color: rgba(21, 71, 52, 0.28);
+}
+
+.ask span {
+  display: block;
+  padding-right: 4.5rem;
+}
+
 .site-footer {
   padding: 2.5rem 0 3rem;
   border-top: 1px solid var(--line);
@@ -707,7 +1020,10 @@ input {
   .rule,
   .role-card,
   .bot-grid,
-  .principles {
+  .principles,
+  .prompt-card,
+  .week-grid,
+  .verb-grid {
     grid-template-columns: 1fr;
   }
 
