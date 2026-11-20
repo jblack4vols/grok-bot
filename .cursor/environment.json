@@ -1,0 +1,11 @@
+{
+  "name": "grok-bot",
+  "install": "bash .cursor/cloud-install.sh",
+  "start": "bash .cursor/cloud-start.sh",
+  "ports": [
+    {
+      "name": "leadership playbook",
+      "port": 8765
+    }
+  ]
+}
